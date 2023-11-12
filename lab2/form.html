@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGI Form</title>
+</head>
+<body>
+    <form action="/cgi-bin/process_form.py" method="post">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="gender">Стать:</label>
+        <select id="gender" name="gender">
+            <option value="male">Чоловік</option>
+            <option value="female">Жінка</option>
+            <option value="other">Інше</option>
+        </select><br>
+
+        <label>Оберіть мову програмування:</label><br>
+        <input type="radio" id="python" name="programming_language" value="python">
+        <label for="python">Python</label><br>
+        <input type="radio" id="java" name="programming_language" value="java">
+        <label for="java">Java</label><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Підписатися на розсилку</label><br>
+
+        <input type="submit" value="Відправити">
+    </form>
+</body>
+</html>
