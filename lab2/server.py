@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-from http.server import CGIHTTPRequestHandler, HTTPServer
+from http.server import CGIHTTPRequestHandler, HTTPServer  # Замініть цей рядок
 
 # Вказати шлях до теки, де знаходяться CGI-сценарії
-cgi_dir = "form.html"
+cgi_dir = "/cgi-bin"  # Змінено шлях до теки CGI-сценаріїв
 
 # Запустити CGI-сервер на порту 8000
 server_address = ("", 8000)
