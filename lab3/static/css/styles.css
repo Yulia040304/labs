@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+h1, h2 {
+    color: deeppink;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #008000;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+footer {
+    background-color: deeppink;
+    color: 	#000000;
+    padding: 10px;
+    text-align:center;
+}
+a{
+ color: deeppink;
+ align: center;
+ font-size: 30px;
+}
+th, tr{
+border: solid;
+color: deeppink;
+size: 15px;
+}
+table{
+border: solid;
+color: deeppink;
+size: 15px;
+}
+p{
+color:paleVioletRed;
+font-size:25px;
+font-style: italic;
+}
+
