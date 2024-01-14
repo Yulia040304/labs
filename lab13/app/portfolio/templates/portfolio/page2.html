@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+<div class="container">
+    <h2>Page 2</h2>
+    <p class="biography">У вільний час люблю займатись випічкою. Натхнення та нові рецепти беру з ютуб блогів. Ось мій рейтинг:</p>
+    <table class="bio-table">
+    <tr>
+        <th>Назва каналу</th>
+        <th>Підписники</th>
+        <th>Національність</th>
+    </tr>
+    <tr>
+        <td>Liza Glinskaya</td>
+        <td>717 тисяч</td>
+        <td>українка</td>
+    </tr>
+    <tr>
+        <td>Cookers Show</td>
+        <td>14 тисяч</td>
+        <td>українка</td>
+    </tr>
+    <tr>
+        <td>Євгенія Періг</td>
+        <td>84 тисяч</td>
+        <td> українка</td>
+    </tr>
+
+    </table>
+    <img src="/static/images/png2.png" alt="Зображення 2"><br><br>
+    <h4><a href="{{ url_for('portfolio.about') }}">Повернутися до біографії</a></h4>
+</div>
+{% endblock %}
+

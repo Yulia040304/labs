@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %} About{% endblock %}
+
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1> A more detailed biography can be found below</h1>
+
+     <ul class="simple-list">
+        <li>
+            <a href="{{ url_for('portfolio.home') }}">Home</a>
+        </li>
+        <li>
+            <a href="{{ url_for('portfolio.page1') }}">page 1</a>
+        </li>
+        <li>
+            <a href="{{ url_for('portfolio.page2') }}">page 2</a>
+        </li>
+        <li>
+            <a href="{{ url_for('portfolio.page3') }}">page 3</a>
+        </li>
+    </ul>
+    <img src="/static/images/image5.jpg" alt="">
+</div>
+{% endblock %}
